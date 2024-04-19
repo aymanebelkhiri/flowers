@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>eLEARNING - eLearning HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <h2 class="m-0 text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="36" style="margin-right:10px;margin-bottom: 4px;" height="36" fill="currentColor" class="bi bi-flower1" viewBox="0 0 16 16">
+                <path d="M6.174 1.184a2 2 0 0 1 3.652 0A2 2 0 0 1 12.99 3.01a2 2 0 0 1 1.826 3.164 2 2 0 0 1 0 3.652 2 2 0 0 1-1.826 3.164 2 2 0 0 1-3.164 1.826 2 2 0 0 1-3.652 0A2 2 0 0 1 3.01 12.99a2 2 0 0 1-1.826-3.164 2 2 0 0 1 0-3.652A2 2 0 0 1 3.01 3.01a2 2 0 0 1 3.164-1.826M8 1a1 1 0 0 0-.998 1.03l.01.091q.017.116.054.296c.049.241.122.542.213.887.182.688.428 1.513.676 2.314L8 5.762l.045-.144c.248-.8.494-1.626.676-2.314.091-.345.164-.646.213-.887a5 5 0 0 0 .064-.386L9 2a1 1 0 0 0-1-1M2 9l.03-.002.091-.01a5 5 0 0 0 .296-.054c.241-.049.542-.122.887-.213a61 61 0 0 0 2.314-.676L5.762 8l-.144-.045a61 61 0 0 0-2.314-.676 17 17 0 0 0-.887-.213 5 5 0 0 0-.386-.064L2 7a1 1 0 1 0 0 2m7 5-.002-.03a5 5 0 0 0-.064-.386 16 16 0 0 0-.213-.888 61 61 0 0 0-.676-2.314L8 10.238l-.045.144c-.248.8-.494 1.626-.676 2.314-.091.345-.164.646-.213.887a5 5 0 0 0-.064.386L7 14a1 1 0 1 0 2 0m-5.696-2.134.025-.017a5 5 0 0 0 .303-.248c.184-.164.408-.377.661-.629A61 61 0 0 0 5.96 9.23l.103-.111-.147.033a61 61 0 0 0-2.343.572c-.344.093-.64.18-.874.258a5 5 0 0 0-.367.138l-.027.014a1 1 0 1 0 1 1.732zM4.5 14.062a1 1 0 0 0 1.366-.366l.014-.027q.014-.03.036-.084a5 5 0 0 0 .102-.283c.078-.233.165-.53.258-.874a61 61 0 0 0 .572-2.343l.033-.147-.11.102a61 61 0 0 0-1.743 1.667 17 17 0 0 0-.629.66 5 5 0 0 0-.248.304l-.017.025a1 1 0 0 0 .366 1.366m9.196-8.196a1 1 0 0 0-1-1.732l-.025.017a5 5 0 0 0-.303.248 17 17 0 0 0-.661.629A61 61 0 0 0 10.04 6.77l-.102.111.147-.033a61 61 0 0 0 2.342-.572c.345-.093.642-.18.875-.258a5 5 0 0 0 .367-.138zM11.5 1.938a1 1 0 0 0-1.366.366l-.014.027q-.014.03-.036.084a5 5 0 0 0-.102.283c-.078.233-.165.53-.258.875a61 61 0 0 0-.572 2.342l-.033.147.11-.102a61 61 0 0 0 1.743-1.667c.252-.253.465-.477.629-.66a5 5 0 0 0 .248-.304l.017-.025a1 1 0 0 0-.366-1.366M14 9a1 1 0 0 0 0-2l-.03.002a5 5 0 0 0-.386.064c-.242.049-.543.122-.888.213-.688.182-1.513.428-2.314.676L10.238 8l.144.045c.8.248 1.626.494 2.314.676.345.091.646.164.887.213a5 5 0 0 0 .386.064zM1.938 4.5a1 1 0 0 0 .393 1.38l.084.035q.108.045.283.103c.233.078.53.165.874.258a61 61 0 0 0 2.343.572l.147.033-.103-.111a61 61 0 0 0-1.666-1.742 17 17 0 0 0-.66-.629 5 5 0 0 0-.304-.248l-.025-.017a1 1 0 0 0-1.366.366m2.196-1.196.017.025a5 5 0 0 0 .248.303c.164.184.377.408.629.661A61 61 0 0 0 6.77 5.96l.111.102-.033-.147a61 61 0 0 0-.572-2.342c-.093-.345-.18-.642-.258-.875a5 5 0 0 0-.138-.367l-.014-.027a1 1 0 1 0-1.732 1m9.928 8.196a1 1 0 0 0-.366-1.366l-.027-.014a5 5 0 0 0-.367-.138c-.233-.078-.53-.165-.875-.258a61 61 0 0 0-2.342-.572l-.147-.033.102.111a61 61 0 0 0 1.667 1.742c.253.252.477.465.66.629a5 5 0 0 0 .304.248l.025.017a1 1 0 0 0 1.366-.366m-3.928 2.196a1 1 0 0 0 1.732-1l-.017-.025a5 5 0 0 0-.248-.303 17 17 0 0 0-.629-.661A61 61 0 0 0 9.23 10.04l-.111-.102.033.147a61 61 0 0 0 .572 2.342c.093.345.18.642.258.875a5 5 0 0 0 .138.367zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                </svg>Ros’Art</h2>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link ">Accueil</a>
+                <a href="about.html" class="nav-item nav-link"> À propos</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Store</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="team.html" class="dropdown-item">Évènements</a>
+                        <a href="testimonial.html" class="dropdown-item">bouquets</a>
+                        <a href="404.html" class="dropdown-item">couronnes</a>
+                    </div>
+                </div>
+                <a href="action.html" class="nav-item nav-link"> Nos actions associatives </a>
+                <a href="vesite.html" class="nav-item nav-link"> Les visites professionnelles </a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="recherche.html" class="nav-item nav-link active">Recherche  </a>
+            </div>
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Join Now<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <h1 class="display-3 text-white animated slideInDown">Recherche</h1>
+                    <nav aria-label="breadcrumb">
+                        <br><br>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+
+    <div class="container">
+        <h1>
+
+            Quels sont les contraintes qui entravent la ville d’El Jadida ?
+        </h1><br><br>
+
+        <p>
+            El-Jadida ou al-Jadida (arabe : الجديدة, berbère : ⵊⵊⴷⵉⴷⴰ, darija : j-jdida ) alBrija (arabe : البريجة), Mazagan (arabe : مازاگان, berbère : ⵎⴰⵣⴰⴳⴰⵏ, portugais : Mazagão) et al-Mahdouma (arabe : المهدومة) – est une ville côtière du Maroc, à 96 km au sud-ouest de Casablanca, chef-lieu de la province d'El Jadida. La cité fortifiée, édifiée par les Portugais au début du xvie siècle et nommée Mazagan (Mazagão en portugais), fut prise par les Marocains en 1769. 
+        </p>
+        <p>
+            A commencer par ce nom qui lui fut attribué, « Mazagan » est un nom qui serait issu du toponyme berbère “Mazighan”, qui signifie “eau du ciel”. Un terme qui serait, selon certains, employé dans la région pour désigner les puits destinés à recueillir les eaux de pluie... Mais selon le géographe Al Idrissi, qui écrivit le nom de la ville en arabe sous le nom de Mazighan au 10ème siècle, ce terme signifierait « meules ».
+        </p>
+        <p>
+            André Privé suppose, quant à lui, que le mot est d'origine portugaise, et qu’après sa destruction, la ville a été appelée Al Mahdouma, « la démolie », pour adopter enfin le nom d'El Jadida (« la nouvelle » ou « la neuve ») après avoir été reconstruite.
+        </p>
+        <p>
+            La ville d'El Jadida, au Maroc, est reconnue pour son riche patrimoine historique et sa position stratégique sur la côte atlantique. Cependant, derrière sa façade pittoresque se cachent des défis complexes qui entravent son développement urbain. Cet article propose une analyse détaillée des contraintes et des problèmes qui limitent la progression d'El Jadida vers une croissance urbaine durable et équilibrée.
+        </p>
+        <p>
+            Toutefois, derrière sa beauté et son potentiel résident des défis complexes qui entravent son développement et son épanouissement. Nous examinerons les contraintes majeures auxquelles fait face la ville d’El Jadida, mettant en lumière les obstacles qui compromettent son progrès socio-économique et environnemental.
+        </p>
+        <p>
+            Apres avoir fait des recherches approfondis sur ce sujet, plusieurs complaintes ont été faite auprès des autorités marocaine, les citoyens sont de plus en plus en mécontentement envers la ville et tout ce qui l’entourent de négligence, maltraitance, défis, et contraintes.
+        </p>
+        <p>
+            On trouve parmi c’est derniers :
+        </p>
+        <p>
+            <h3>
+
+                Pression Démographique.
+            </h3>
+
+La croissance rapide de la population constitue l'un des principaux obstacles au développement d'El Jadida qui mérite une analyse approfondie en raison de ses multiples implications sur le développement urbain et la qualité de vie des habitants. Avec une augmentation démographique constante, la ville est confrontée à une pression croissante sur ses infrastructures et ses services urbains. Cette augmentation de la demande entraîne des défis en matière de logement, de transport et d'accès aux services de base pour les résidents. La dynamique démographique en constante évolution se traduit par une demande accrue en matière de logement. Cette demande dépasse souvent l'offre disponible, entraînant une augmentation des prix de l'immobilier et une tendance vers la densification des quartiers existants ou la création de nouveaux développements urbains en périphérie. Cette expansion urbaine, parfois anarchique, peut conduire à des problèmes tels que l'étalement urbain, la dégradation des terres agricoles environnantes et une utilisation inefficace des ressources.
+        </p>
+        <p>
+            <h3>
+
+                Urbanisation Non Planifiée.
+            </h3>
+
+L'urbanisation non planifiée aggrave les défis posés par la croissance démographique. L'étalement urbain anarchique crée des quartiers informels où les infrastructures de base sont souvent absentes ou inadéquates. Cette expansion désorganisée conduit à une congestion croissante, à une détérioration de la qualité de vie et à des défis supplémentaires en matière de gestion environnementale. L'urbanisation non planifiée représente un défi majeur pour la ville d'El Jadida, exacerbant les difficultés déjà posées par la croissance démographique rapide. Cette expansion urbaine anarchique est souvent caractérisée par un étalement désordonné et la création de quartiers informels où les infrastructures de base telles que l'eau, l'électricité, les routes et les systèmes d'assainissement sont souvent absentes ou inadéquates.
+        </p>
+        <p>
+            <h3>
+
+                Infrastructure vieillissante.
+            </h3>
+Des infrastructures obsolètes peuvent entraîner des problèmes tels que des pannes d'électricité, des fuites d'eau, etc., ce qui peut affecter la qualité de vie des habitants et entraver le développement économique.
+        </p>
+        <p>
+            <h4>Bâtiments anciens.</h4>
+            <ul>
+                <li>
+                    Patrimoine historique a préservé :
+                </li>
+                <p>
+                    El Jadida est réputée pour ses bâtiments historiques, tels que sa médina fortifiée et ses anciennes maisons portugaises. La préservation de ces bâtiments est essentielle pour maintenir l'identité culturelle de la ville et attirer les visiteurs
+                </p>
+                <li>
+
+                    Défis de rénovation :
+                </li>
+                <p>
+
+                    La rénovation des bâtiments anciens peut être complexe en raison de leur structure et de leur matériel de construction. Les normes de préservation historique doivent être respectées tout en garantissant la sécurité et la fonctionnalité des bâtiments pour leurs occupants.
+                </p>
+                <li>
+
+                    Sécurités des bâtiments :
+                </li>
+                <p>
+                    
+                    Le vieillissement des bâtiments peut présenter des risques pour la sécurité des habitants en raison de la détérioration des structures. Des inspections régulières et des travaux de réparation sont nécessaires pour prévenir les accidents et les dommages.
+                </p>
+            </ul>
+            <h4>Routes pavées.</h4>
+            <ul>
+                <li>Conservation du patrimoine routier :</li>
+                <p>Les routes pavées font partie intégrante du caractère historique d'El Jadida. Cependant, leur entretien peut être difficile en raison de l'usure naturelle et des défis de drainage associés aux matériaux pavés.</p>
+                
+                <li>Réparation fréquentes :</li>
+                <p>Les routes pavées peuvent se détériorer plus rapidement que les routes modernes en raison de leur exposition aux intempéries et à l'activité de la circulation. Des réparations régulières sont nécessaires pour maintenir leur état et assurer la sécurité des conducteurs et des piétons.</p>
+                
+                <li>Gestion du drainage :</li>
+                <p>Les problèmes de drainage peuvent aggraver la détérioration des routes pavées en provoquant des accumulations d'eau et des affaissements. Des systèmes de drainage efficaces sont essentiels pour prévenir les dommages causés par l'eau et prolonger la durée de vie des routes.</p>
+            </ul>
+            
+            <h4>Problèmes de circulation et de transport.</h4>
+            <p>La congestion routière et les insuffisances dans les systèmes de transport en commun peuvent rendre les déplacements difficiles pour les habitants et les visiteurs, et limiter l'accessibilité aux emplois et aux services, sans oublier la pression démographique qui se fait sentir dans le domaine des transports. La demande croissante en déplacements entraîne une saturation des routes et des transports en commun, allongeant les temps de trajet et contribuant à la congestion urbaine. Les infrastructures de transport, telles que les routes, les ponts et les transports en commun, doivent être adaptées pour répondre à cette demande croissante et pour garantir des déplacements efficaces et durables pour les habitants.</p>
+            
+            <h4>Contraintes Financières.</h4>
+            <p>Les ressources financières limitées constituent un obstacle majeur au développement d'El Jadida. Les investissements dans les infrastructures et les services publics sont freinés par des contraintes budgétaires, limitant ainsi la capacité de la ville à répondre efficacement aux besoins de sa population croissante. Cette situation entrave également les efforts visant à stimuler le développement économique et à améliorer la qualité de vie des habitants.</p>
+            
+            <h4>Préservation du Patrimoine Historique.</h4>
+            <p>La préservation du patrimoine historique d'El Jadida tout en promouvant son développement moderne est un défi délicat. La ville abrite des sites historiques importants, tels que la médina portugaise et les fortifications de la ville, qui attirent de nombreux visiteurs chaque année. Cependant, concilier la préservation de ces sites avec les impératifs de développement urbain peut être complexe et nécessite une planification soigneuse et une gestion efficace des ressources.</p>
+            <p>Mais comme on a site au paravent n’est pas la meilleurs, donc la ville d’el Jadida fait face à la démolition de son patrimoine, et de sa culture précieuse.</p>
+            
+            <h4>Défis Environnementaux.</h4>
+            <p>La gestion environnementale est un autre défi crucial pour El Jadida. La ville est confrontée à des problèmes tels que la pollution de l'air et de l'eau, la gestion des déchets et la protection des ressources naturelles. Ces défis environnementaux ont des répercussions importantes sur la santé publique, la qualité de vie et la durabilité à long terme de la ville.</p>
+            <p>Pollution de l'Air.</p>
+            <ul>
+                <li>Émissions Véhiculaires :</li>
+                <p>La circulation dense et les véhicules anciens contribuent à la pollution de l'air, ce qui peut avoir des effets néfastes sur la santé des habitants et sur la qualité de vie urbaine.</p>
+                <li>Industries et Activités Économiques :</li>
+                <p>Les émissions industrielles provenant des entreprises et des activités économiques peuvent également contribuer à la pollution de l'air, en particulier si les installations ne respectent pas les normes environnementales.</p>
+            </ul>
+            
+            <h4>Gestion des Déchets :</h4>
+            <ul>
+                <li>Collecte et Élimination des Déchets :</li>
+                <p>La gestion des déchets solides peut être un défi, avec des besoins croissants en termes de collecte, de tri et de traitement des déchets pour prévenir la pollution de l'environnement et la dégradation des paysages urbains.</p>
+                <li>Décharges Sauvages :</li>
+                <p>Les décharges sauvages peuvent polluer les sols et les cours d'eau, en plus de nuire à l'esthétique de la ville. La lutte contre ce phénomène nécessite des efforts de sensibilisation, de surveillance et de renforcement de l'application des réglementations.</p>
+            </ul>
+            
+            <h4>Gestion de l'Eau :</h4>
+            <ul>
+                <li>Gestion des Ressources en Eau :</li>
+                <p>Avec des pressions croissantes sur les ressources en eau, la gestion efficace de l'eau est essentielle pour répondre aux besoins des habitants tout en préservant les écosystèmes locaux.</p>
+                <li>Gestion des Inondations :</li>
+                <p>El Jadida peut être sujette aux inondations, en particulier pendant la saison des pluies. Une planification urbaine intelligente et des systèmes de drainage adéquats sont nécessaires pour minimiser les risques d'inondation et protéger les infrastructures critiques.</p>
+            </ul>
+            
+            <h4>Changement Climatique :</h4>
+            <ul>
+                <li>Élévation du Niveau de la Mer :</li>
+                <p>En tant que ville côtière, El Jadida est vulnérable à l'élévation du niveau de la mer due au changement climatique, ce qui peut augmenter les risques d'inondations côtières et menacer les infrastructures côtières.</p>
+                <li>Variabilité des Précipitations :</li>
+                <p>Les modèles de précipitations peuvent changer en raison du changement climatique, ce qui peut affecter la disponibilité de l'eau et augmenter les risques d'événements météorologiques extrêmes tels que les sécheresses et les tempêtes.</p>
+            </ul>
+            
+            <p>Pression sur les ressources naturelles.</p>
+            <p>Une urbanisation rapide peut exercer une pression sur les ressources naturelles telles que l'eau et les terres, ce qui peut entraîner des problèmes de gestion des ressources et de durabilité environnementale.</p>
+            <h4>Eau :</h4>
+            <ul>
+                <li>Demandé croissante en eau :</li>
+                <p>Avec l'augmentation de la population et du développement économique, la demande en eau augmente, mettant ainsi une pression sur les ressources en eau disponibles.</p>
+                <li>Gestion inadéquate des ressources en eau :</li>
+                <p>La surexploitation des nappes phréatiques et des sources d'eau peut entraîner une diminution de la disponibilité de l'eau et une détérioration de sa qualité.</p>
+            </ul>
+            
+            <h4>Terres et agriculture :</h4>
+            <ul>
+                <li>Urbanisation croissante :</li>
+                <p>L'expansion urbaine peut entraîner la conversion des terres agricoles en zones résidentielles et commerciales, ce qui réduit la superficie des terres disponibles pour l'agriculture et met en péril la sécurité alimentaire.</p>
+                <li>Pratiques agricoles non durables :</li>
+                <p>L'utilisation excessive de pesticides et d'engrais chimiques ainsi que la surexploitation des sols peuvent entraîner une dégradation des terres agricoles et une diminution de leur productivité à long terme.</p>
+            </ul>
+            
+            <h4>Écosystèmes côtiers :</h4>
+            <ul>
+                <li>Pression touristique :</li>
+                <p>En tant que destination touristique populaire, El Jadida fait face à une pression croissante sur ses écosystèmes côtiers en raison du développement touristique non réglementé, ce qui peut entraîner une dégradation des habitats naturels et une perte de biodiversité.</p>
+                <li>Pollution marine :</li>
+                <p>Les activités industrielles, portuaires et touristiques peuvent entraîner une pollution marine, mettant en danger la santé des écosystèmes côtiers et des espèces marines.</p>
+            </ul>
+            
+            <p>Chômage et pauvreté.</p>
+            <p>Comme dans de nombreuses villes, le chômage et la pauvreté peuvent constituer des défis socio-économiques majeurs, affectant la stabilité sociale et le bien-être des habitants.</p>
+            <h4>Chômage :</h4>
+            <ul>
+                <li>Taux de Chômage Élevé :</li>
+                <p>Malgré les progrès économiques réalisés ces dernières années, El Jadida continue de faire face à un taux de chômage élevé, en particulier parmi les jeunes diplômés et les femmes.</p>
+                <li>Manque d'Opportunités d'Emploi :</li>
+                <p>Le secteur économique d'El Jadida est dominé par l'agriculture, le tourisme, l'industrie et les services. Cependant, le nombre d'emplois disponibles peut ne pas être suffisant pour absorber la main-d'œuvre locale, ce qui conduit à un sous-emploi et au chômage.</p>
+                <li>Qualifications et Compétences :</li>
+                <p>Un décalage peut exister entre les qualifications et les compétences des demandeurs d'emploi et les besoins du marché du travail local, ce qui rend difficile pour certains individus de trouver un emploi correspondant à leurs compétences.</p>
+            </ul>
+            
+            <h4>Pauvreté :</h4>
+            <ul>
+                <li>Inégalités Socio-Économiques :</li>
+                <p>Malgré le développement économique de la région, El Jadida connaît des inégalités socio-économiques importantes, avec une partie de la population vivant dans des conditions de pauvreté et de précarité.</p>
+                <li>Accès Limité aux Services de Base :</li>
+                <p>Certains quartiers défavorisés peuvent avoir un accès limité aux services de base tels que l'éducation, la santé, l'eau potable et les infrastructures sociales, ce qui perpétue le cycle de la pauvreté.</p>
+                <li>Fragilité Économique :</li>
+                <p>Les ménages à faible revenu peuvent être vulnérables aux chocs économiques, tels que les fluctuations des prix des denrées alimentaires et les crises économiques, ce qui peut aggraver leur situation financière et les pousser davantage dans la pauvreté.</p>
+            </ul>
+            
+            <h4>Sécurité :</h4>
+            <p>Les problèmes liés à la criminalité et à l'insécurité peuvent affecter la qualité de vie des habitants et dissuader les investissements et le tourisme.</p>
+            <p>Sécurité Publique :</p>
+            <ul>
+                <li>Criminalité urbaine :</li>
+                <p>Bien qu'El Jadida soit généralement considérée comme une ville sûre, elle peut être confrontée à des problèmes de criminalité urbaine tels que le vol, le vandalisme et les agressions. La prévention de la criminalité et le maintien de l'ordre public sont essentiels pour assurer la sécurité des résidents et des visiteurs.</p>
+                <li>Contrôle des drogues et de la toxicomanie :</li>
+                <p>La lutte contre le trafic de drogue et l'abus de substances illicites est un défi important pour les autorités locales. Des mesures de prévention, de sensibilisation et de répression sont nécessaires pour lutter contre ce fléau et protéger la jeunesse.</p>
+            </ul>
+            
+            <h4>Sécurité Routière :</h4>
+            <ul>
+                <li>Accidents de la circulation :</li>
+                <p>Les accidents de la route constituent une préoccupation majeure à El Jadida, en raison de la densité de la circulation, du non-respect des règles de la route et de l'état des infrastructures routières. Des mesures de sensibilisation, de surveillance et d'application des lois sont nécessaires pour réduire le nombre d'accidents et de victimes.</p>
+                <li>Gestion du trafic :</li>
+                <p>La gestion efficace du trafic est essentielle pour prévenir les embouteillages, réduire les risques d'accidents et garantir la fluidité de la circulation dans la ville. Cela peut nécessiter des investissements dans les infrastructures routières, la signalisation et la régulation du trafic.</p>
+            </ul>
+            
+            <h4>Sécurité Touristique :</h4>
+            <ul>
+                <li>Protection des sites touristiques :</li>
+                <p>El Jadida étant une destination touristique populaire, il est important de garantir la sécurité des sites touristiques et des visiteurs. Cela peut impliquer la présence de forces de sécurité dédiées, la surveillance électronique et des mesures de prévention du terrorisme.</p>
+                <li>Sécurité des visiteurs :</li>
+                <p>Assurer la sécurité des touristes est essentielle pour promouvoir le tourisme et soutenir l'économie locale. Des mesures de sécurité telles que des patrouilles policières, des zones de stationnement sécurisées et des informations sur la sécurité sont nécessaires pour garantir une expérience touristique positive.</p>
+            </ul>
+            
+            <h4>Accès aux services de base :</h4>
+            <p>Certains quartiers ou populations peuvent rencontrer des difficultés pour accéder à des services de base tels que l'éducation, les soins de santé et les services sociaux, ce qui peut contribuer à perpétuer les inégalités sociales.</p>
+            
+            <h4>Santé :</h4>
+            <ul>
+                <li>Infrastructures de santé insuffisantes :</li>
+                <p>Certains quartiers ou zones périphériques d'El Jadida peuvent manquer d'infrastructures de santé adéquates, y compris des hôpitaux, des cliniques et des centres de santé, ce qui rend difficile l'accès aux soins médicaux pour certains résidents.</p>
+                <li>Pénurie de personnel médical qualifié :</li>
+                <p>Le manque de personnel médical qualifié, notamment de médecins, d'infirmiers et de spécialistes, peut limiter la capacité des établissements de santé à fournir des services de qualité et à répondre aux besoins de la population.</p>
+            </ul>
+            
+            <h4>Éducation :</h4>
+            <ul>
+                <li>Scolarisation inégale :</li>
+                <p>Bien qu'El Jadida dispose d'écoles primaires et secondaires, l'accès à l'éducation peut être inégal en raison de la distance géographique, de la disponibilité des établissements et des ressources pédagogiques limitées dans certaines zones.</p>
+                <li>Qualité de l'éducation :</li>
+                <p>La qualité de l'éducation peut varier d'une école à l'autre, ce qui peut avoir un impact sur les résultats scolaires des élèves et leur accès à des opportunités éducatives et professionnelles futures.</p>
+            </ul>
+            
+            <p>Gouvernance et administration inefficaces.</p>
+            <p>Une mauvaise gouvernance, la corruption et l'inefficacité administrative peuvent entraver la capacité des autorités locales à répondre aux besoins.</p>
+            <h4>Transparence et Responsabilité :</h4>
+            <ul>
+                <li>Manque de transparence :</li>
+                <p>Un manque de transparence dans la prise de décision et la gestion des ressources publiques peut entraîner un sentiment de méfiance et de frustration parmi les citoyens.</p>
+                <li>Faible recevabilité :</li>
+                <p>L'absence de mécanismes efficaces de responsabilisation des dirigeants locaux peut conduire à une mauvaise gestion des fonds publics et à des pratiques corrompues.</p>
+            </ul>
+            
+            <h4>Participation Citoyenne :</h4>
+            <ul>
+                <li>Manque de participation :</li>
+                <p>Un faible niveau d'engagement et de participation citoyenne peut limiter la capacité des autorités locales à répondre aux besoins et aux préoccupations de la population.</p>
+                <li>Manque de canaux de communication :</li>
+                <p>L'absence de canaux de communication efficaces entre les gouvernants et les gouvernés peut entraver la diffusion d'informations importantes et la collecte de rétroactions de la part des citoyens.</p>
+            </ul>
+            
+            <h4>Efficacité Administrative :</h4>
+            <ul>
+                <li>Bureaucratie excessive :</li>
+                <p>La bureaucratie excessive et les procédures administratives complexes peuvent ralentir les processus de prise de décision et entraver la mise en œuvre rapide de projets et de programmes.</p>
+                <li>Manque de coordination :</li>
+                <p>Un manque de coordination entre les différentes institutions et départements gouvernementaux peut conduire à des doublons, à des conflits de compétences et à des retards dans la réalisation des objectifs.</p>
+            </ul>
+            En adoptant une approche inclusive et axée sur les solutions, El Jadida peut surmonter ses défis actuels et devenir une ville plus résiliente, dynamique et inclusive, offrant une meilleure qualité de vie à ses habitants et renforçant son attractivité en tant que destination touristique et économique.
+
+            <h4>
+
+                Ressource :
+            </h4>
+
+            https://www.leconomiste.com/article/les-nouveaux-defis-d-el-jadidabrdes-zones-d-urbanisation
+            El Jadida — Wikipédia (wikipedia.org)
+            De Mazagan au Présent : l'Histoire de la Ville d'El Jadida - The Moorish Times
+            Ville portugaise de Mazagan (El Jadida) - UNESCO World Heritage Centre
+            Le nouveau défis d'El Jadida - Le Matin.ma
+            El-Jadida: Ruralisation D'Une Ville - el jadida scoop
+        </p>
+    </div>
+        
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Rue De Fes, El Jadida, Morocco</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+212617010965</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>rosart292@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/rosart.encgj?igsh=bzRiNW50Z2lnYnh0 "><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61556658033997"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/ros%E2%80%99art-encgj-6795582b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app&fbclid=PAZXh0bgNhZW0CMTEAAaZDmnsBgn4jbu4ycU4YnKqeK6g7xA5R2eBTgpJUCK352FXKIgfNzb_eDIA_aem_AQAd7gcoHIkIrQF5wllZkBbXU_znyfQENTQYAuF-ZNfkWocyelQpAgF55MtaJMthkocjrGbYyh5YIndooTE4I-Yh"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Gallery</h4>
+                    <div class="row g-2 pt-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-2.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-3.jpg" alt="">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light p-1" src="img/course-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Ros’Art</a>, All Right Reserved.
+
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        
+                        
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
